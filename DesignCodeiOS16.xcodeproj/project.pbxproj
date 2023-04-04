@@ -12,6 +12,7 @@
 		D9206B2829D467AC00651CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9206B2729D467AC00651CC9 /* Assets.xcassets */; };
 		D9206B2B29D467AC00651CC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9206B2A29D467AC00651CC9 /* Preview Assets.xcassets */; };
 		D9E827F629DC4B03005537ED /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827F529DC4B03005537ED /* NavigationStackView.swift */; };
+		D9E827F829DC4D8A005537ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827F729DC4D8A005537ED /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D9206B2729D467AC00651CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9206B2A29D467AC00651CC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9E827F529DC4B03005537ED /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
+		D9E827F729DC4D8A005537ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D9206B2329D467AB00651CC9 /* DesignCodeiOS16App.swift */,
 				D9206B2529D467AB00651CC9 /* ContentView.swift */,
 				D9E827F529DC4B03005537ED /* NavigationStackView.swift */,
+				D9E827F729DC4D8A005537ED /* Data.swift */,
 				D9206B2729D467AC00651CC9 /* Assets.xcassets */,
 				D9206B2929D467AC00651CC9 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				D9206B2629D467AB00651CC9 /* ContentView.swift in Sources */,
 				D9E827F629DC4B03005537ED /* NavigationStackView.swift in Sources */,
 				D9206B2429D467AB00651CC9 /* DesignCodeiOS16App.swift in Sources */,
+				D9E827F829DC4D8A005537ED /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,17 @@ import SwiftUI
 
 struct NavigationStackView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                NavigationLink(destination: Text("Context")) {
+                    Label("Item", systemImage: "house")
+                        .foregroundColor(.primary)
+                }
+            }
+            .navigationTitle("SwiftUI Apps")
+            .navigationBarTitleDisplayMode(.inline)
+            .listStyle(.plain)
+        }
     }
 }
 
