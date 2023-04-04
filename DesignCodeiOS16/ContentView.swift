@@ -9,15 +9,50 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showMenu = false
+    @State var selectedMenu: Menu = .compass
+    @GestureState var press = false
+    
+    var longPress: some Gesture {
+        LongPressGesture(minimumDuration: 1)
+            .updating($press) { currentState, gestureState,
+                transaction in
+                gestureState = currentState
+            }
+            .onEnded { value in
+                showMenu = true
+            }
+    }
     
     var body: some View {
-        Button("Show Menu") {
-            showMenu = true
+        ZStack {
+//            Color.primary.ignoresSafeArea()
+
+            switch selectedMenu {
+            case .compass:
+                MessageView()
+            case .card:
+                Text("Card")
+            case .charts:
+                Text("Charts")
+            case .radial:
+                Text("Radial")
+            case .halfsheet:
+                Text("Half Sheet")
+            case .gooey:
+                Text("Gooey")
+            case .actionbutton:
+                Text("Action Button")
+            }
+            
+            Button("Show Menu") {
+                showMenu = true
+            }
+            .sheet(isPresented: $showMenu) {
+                MenuView(selectedMenu: $selectedMenu)
+                    .presentationDetents([.medium, .large])
+            }
         }
-        .sheet(isPresented: $showMenu) {
-            NavigationStackView()
-                .presentationDetents([.medium, .large])
-        }
+        .gesture(longPress)
     }
 }
 
