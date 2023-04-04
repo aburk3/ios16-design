@@ -16,6 +16,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showMenu) {
             NavigationStackView()
+                .presentationDetents([.medium, .large])
         }
     }
 }
