@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showMenu = false
-    @State var selectedMenu: Menu = .compass
+    @AppStorage("selectedMenu") var selectedMenu: Menu = .compass
     @GestureState var press = false
     
     var longPress: some Gesture {
@@ -37,15 +37,15 @@ struct ContentView: View {
             case .radial:
                 Text("Radial")
             case .halfsheet:
-                Text("Half Sheet")
+                MenuView()
             case .gooey:
                 Text("Gooey")
-            case .actionbutton: 
+            case .actionbutton:
                 Text("Action Button")
             }
         }
         .sheet(isPresented: $showMenu) {
-            MenuView(selectedMenu: $selectedMenu)
+            MenuView()
                 .presentationDetents([.medium, .large])
         }
         .gesture(longPress)
