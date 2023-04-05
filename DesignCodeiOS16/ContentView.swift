@@ -25,8 +25,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-//            Color.primary.ignoresSafeArea()
-
+            Color(.systemBackground).ignoresSafeArea()
+            
             switch selectedMenu {
             case .compass:
                 MessageView()
@@ -40,17 +40,13 @@ struct ContentView: View {
                 Text("Half Sheet")
             case .gooey:
                 Text("Gooey")
-            case .actionbutton:
+            case .actionbutton: 
                 Text("Action Button")
             }
-            
-            Button("Show Menu") {
-                showMenu = true
-            }
-            .sheet(isPresented: $showMenu) {
-                MenuView(selectedMenu: $selectedMenu)
-                    .presentationDetents([.medium, .large])
-            }
+        }
+        .sheet(isPresented: $showMenu) {
+            MenuView(selectedMenu: $selectedMenu)
+                .presentationDetents([.medium, .large])
         }
         .gesture(longPress)
     }
