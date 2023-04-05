@@ -12,11 +12,24 @@ struct ChartView: View {
     var body: some View {
         Chart {
             ForEach(data) { item in
-                BarMark(x: .value("Day", item.day), y: .value("Value", item.value))
+                LineMark(x: .value("Day", item.day), y:
+                    .value("Value", item.value), series:
+                    .value("Year", "2023"))
                     .cornerRadius(10)
+                    .interpolationMethod(.catmullRom)
+                    .foregroundStyle(by: .value("Year", "2023"))
+                    .symbol(by: .value("Year", "2023"))
+            }
+            ForEach(data2) { item in
+                LineMark(x: .value("Day", item.day), y:
+                    .value("Value", item.value), series:
+                    .value("Year", "2022"))
+                    .cornerRadius(10)
+                    .interpolationMethod(.catmullRom)
+                    .foregroundStyle(by: .value("Year", "2022"))
+                    .symbol(by: .value("Year", "2022"))
             }
         }
-        .foregroundStyle(.linearGradient(colors: [.blue, .purple], startPoint: .top, endPoint: .bottom))
         .frame(height: 300)
     }
 }
@@ -39,4 +52,12 @@ let data = [
     Value(day: "Jun 3", value: 312),
     Value(day: "Jun 4", value: 256),
     Value(day: "Jun 5", value: 505),
+]
+
+let data2 = [
+    Value(day: "Jun 1", value: 151),
+    Value(day: "Jun 2", value: 192),
+    Value(day: "Jun 3", value: 176),
+    Value(day: "Jun 4", value: 158),
+    Value(day: "Jun 5", value: 401),
 ]
