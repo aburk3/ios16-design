@@ -15,6 +15,7 @@
 		D9E827F829DC4D8A005537ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827F729DC4D8A005537ED /* Data.swift */; };
 		D9E827FA29DC5157005537ED /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827F929DC5157005537ED /* MessageView.swift */; };
 		D9E827FC29DC5286005537ED /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827FB29DC5286005537ED /* MenuView.swift */; };
+		D9E827FE29DDA1D5005537ED /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827FD29DDA1D5005537ED /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D9E827F729DC4D8A005537ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D9E827F929DC5157005537ED /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		D9E827FB29DC5286005537ED /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D9E827FD29DDA1D5005537ED /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				D9206B2329D467AB00651CC9 /* DesignCodeiOS16App.swift */,
 				D9206B2529D467AB00651CC9 /* ContentView.swift */,
+				D9E827FD29DDA1D5005537ED /* ChartView.swift */,
 				D9E827FB29DC5286005537ED /* MenuView.swift */,
 				D9E827F929DC5157005537ED /* MessageView.swift */,
 				D9E827F529DC4B03005537ED /* NavigationStackView.swift */,
@@ -152,6 +155,7 @@
 				D9206B2629D467AB00651CC9 /* ContentView.swift in Sources */,
 				D9E827FC29DC5286005537ED /* MenuView.swift in Sources */,
 				D9E827F629DC4B03005537ED /* NavigationStackView.swift in Sources */,
+				D9E827FE29DDA1D5005537ED /* ChartView.swift in Sources */,
 				D9206B2429D467AB00651CC9 /* DesignCodeiOS16App.swift in Sources */,
 				D9E827F829DC4D8A005537ED /* Data.swift in Sources */,
 				D9E827FA29DC5157005537ED /* MessageView.swift in Sources */,
