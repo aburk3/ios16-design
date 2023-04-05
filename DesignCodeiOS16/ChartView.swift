@@ -11,12 +11,10 @@ import Charts
 struct ChartView: View {
     var body: some View {
         Chart {
-            BarMark(x: .value("Day", "Jun 1"), y: .value("Value", 50))
-                .cornerRadius(10)
-            BarMark(x: .value("Day", "Jun 2"), y: .value("Value", 30))
-                .cornerRadius(10)
-            BarMark(x: .value("Day", "Jun 3"), y: .value("Value", 20))
-                .cornerRadius(10)
+            ForEach(data) { item in
+                BarMark(x: .value("Day", item.day), y: .value("Value", item.value))
+                    .cornerRadius(10)
+            }
         }
         .foregroundStyle(.linearGradient(colors: [.blue, .purple], startPoint: .top, endPoint: .bottom))
         .frame(height: 300)
@@ -28,3 +26,17 @@ struct ChartView_Previews: PreviewProvider {
         ChartView()
     }
 }
+
+struct Value: Identifiable {
+    var id = UUID()
+    var day: String
+    var value: Double
+}
+
+let data = [
+    Value(day: "Jun 1", value: 200),
+    Value(day: "Jun 2", value: 96),
+    Value(day: "Jun 3", value: 312),
+    Value(day: "Jun 4", value: 256),
+    Value(day: "Jun 5", value: 505),
+]
