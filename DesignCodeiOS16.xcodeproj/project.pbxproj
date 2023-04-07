@@ -18,6 +18,7 @@
 		D9E827FE29DDA1D5005537ED /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827FD29DDA1D5005537ED /* ChartView.swift */; };
 		D9E8280029DDA5BE005537ED /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E827FF29DDA5BE005537ED /* GridView.swift */; };
 		D9E8283229DEFD76005537ED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8283129DEFD76005537ED /* CardView.swift */; };
+		D9E8283429DF0465005537ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8283329DF0465005537ED /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D9E827FD29DDA1D5005537ED /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		D9E827FF29DDA5BE005537ED /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		D9E8283129DEFD76005537ED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D9E8283329DF0465005537ED /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D9E827FD29DDA1D5005537ED /* ChartView.swift */,
 				D9E827FF29DDA5BE005537ED /* GridView.swift */,
 				D9E8283129DEFD76005537ED /* CardView.swift */,
+				D9E8283329DF0465005537ED /* DetailView.swift */,
 				D9E827FB29DC5286005537ED /* MenuView.swift */,
 				D9E827F929DC5157005537ED /* MessageView.swift */,
 				D9E827F529DC4B03005537ED /* NavigationStackView.swift */,
@@ -161,6 +164,7 @@
 				D9206B2629D467AB00651CC9 /* ContentView.swift in Sources */,
 				D9E8283229DEFD76005537ED /* CardView.swift in Sources */,
 				D9E827FC29DC5286005537ED /* MenuView.swift in Sources */,
+				D9E8283429DF0465005537ED /* DetailView.swift in Sources */,
 				D9E8280029DDA5BE005537ED /* GridView.swift in Sources */,
 				D9E827F629DC4B03005537ED /* NavigationStackView.swift in Sources */,
 				D9E827FE29DDA1D5005537ED /* ChartView.swift in Sources */,
